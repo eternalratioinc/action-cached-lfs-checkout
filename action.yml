@@ -50,6 +50,16 @@ inputs:
       'Whether to configure the token or SSH key with the local git config
     required: false
     default: true
+  path:
+    description: >
+      'Folder path
+    required: false
+    default: ""
+  ssh-key:
+    description: >
+      'SSH Key
+    required: false
+    default: ""
 
 runs:
   using: "composite"
