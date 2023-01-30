@@ -63,6 +63,8 @@ runs:
         token: ${{ inputs.token }}
         submodules: ${{ inputs.submodules }}
         persist-credentials: ${{ inputs.persist-credentials }}
+        path: ${{ inputs.path }}
+        ssh-key: ${{ inputs.ssh-key }}
 
     - name: Create LFS file list
       run: |
