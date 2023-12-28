@@ -65,7 +65,7 @@ runs:
   using: "composite"
   steps:
     - name: Checkout code
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4.1.1
       with:
         fetch-depth: ${{ inputs.fetch-depth }}
         ref: ${{ inputs.ref }}
@@ -99,7 +99,7 @@ runs:
       shell: bash
 
     - name: Restore LFS cache
-      uses: actions/cache@v3
+      uses: actions/cache@v3.3.2
       id: lfs-cache
       with:
         path: |
